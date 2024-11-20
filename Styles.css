@@ -1,0 +1,88 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Font for the entire page */
+    background-color: #f4f4f4; /* Light gray background color */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding around the body */
+}
+
+/* Header Styles */
+header {
+    background: #007BFF; /* Blue background for the header */
+    color: #fff; /* White text color */
+    padding: 20px; /* Padding inside the header */
+    text-align: center; /* Center the text */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Add space between list items */
+}
+
+nav ul li a {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Make link text bold */
+}
+
+/* Main Section Styles */
+main {
+    margin: 20px 0; /* Margin above and below main content */
+}
+
+/* Section Styles */
+section {
+    background: #fff; /* White background for sections */
+    padding: 20px; /* Padding inside each section */
+    margin-bottom: 20px; /* Space between sections */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form Styles */
+form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+}
+
+label {
+    margin: 10px 0 5px; /* Space above and below labels */
+}
+
+input, select, button {
+    padding: 10px; /* Padding inside input fields */
+    margin-bottom: 15px; /* Space below each input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+}
+
+button {
+    background-color: #007BFF; /* Blue background for the button */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Dashboard Section */
+#charts {
+    text-align: center; /* Center the content in the charts section */
+    padding: 10px; /* Padding around the charts */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center the footer text */
+    margin-top: 20px; /* Space above the footer */
+    font-size: 0.8em; /* Smaller font size */
+    color: #777; /* Gray color for footer text */
+}

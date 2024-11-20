@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Wellbeing Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Student Wellbeing Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="#checkin">Check-in</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Check-in Form -->
+        <section id="checkin">
+            <h2>Daily Wellbeing Check-in</h2>
+            <form id="checkinForm">
+                <label for="mood">How are you feeling today?</label>
+                <select id="mood" name="mood" required>
+                    <option value="">Select...</option>
+                    <option value="happy">😊 Happy</option>
+                    <option value="neutral">😐 Neutral</option>
+                    <option value="sad">😞 Sad</option>
+                    <option value="stressed">😟 Stressed</option>
+                    <option value="anxious">😰 Anxious</option>
+                </select>
+
+                <label for="sleep">Hours of Sleep Last Night:</label>
+                <input type="number" id="sleep" name="sleep" min="0" max="24" required>
+
+                <label for="stress">Rate Your Stress Level (1-10):</label>
+                <input type="number" id="stress" name="stress" min="1" max="10" required>
+
+                <label for="activity">Did you exercise today?</label>
+                <select id="activity" name="activity" required>
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <!-- New Questions -->
+                <label for="excluded">Did you feel excluded this week?</label>
+                <select id="excluded" name="excluded" required>
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="talk">Would you like to talk to someone?</label>
+                <select id="talk" name="talk" required>
+                    <option value="">Select...</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+
+                <button type="submit">Submit Check-in</button>
+            </form>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard">
+            <h2>Your Wellbeing Dashboard</h2>
+            <p>This section will display your wellbeing trends over time.</p>
+            <!-- Placeholder for charts/graphs -->
+            <div id="charts">
+                <p>Charts will be displayed here (using JavaScript later).</p>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources">
+            <h2>Wellbeing Resources</h2>
+            <p>Find helpful resources to support your mental health and wellbeing.</p>
+            <ul>
+                <li><a href="#">Mental Health Resources</a></li>
+                <li><a href="#">Stress Management Techniques</a></li>
+                <li><a href="#">Physical Activity Guides</a></li>
+                <li><a href="#">Sleep Tips</a></li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, reach out to us!</p>
+            <p>Email: support@schoolwellbeingtracker.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Student Wellbeing Tracker</p>
+    </footer>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file for interactivity -->
+</body>
+</html>
